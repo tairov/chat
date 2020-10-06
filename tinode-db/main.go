@@ -12,10 +12,10 @@ import (
 	"strings"
 	"time"
 
-	_ "github.com/tinode/chat/server/db/mongodb"
-	_ "github.com/tinode/chat/server/db/mysql"
-	_ "github.com/tinode/chat/server/db/rethinkdb"
-	"github.com/tinode/chat/server/store"
+	_ "github.com/tairov/chat/server/db/mongodb"
+	_ "github.com/tairov/chat/server/db/mysql"
+	_ "github.com/tairov/chat/server/db/rethinkdb"
+	"github.com/tairov/chat/server/store"
 	jcr "github.com/tinode/jsonco"
 )
 

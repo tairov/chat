@@ -113,7 +113,7 @@ See [instructions](./docker/README.md)
 
 4. Run the server
 	```
-	$GOPATH/bin/tinode -config=$GOPATH/src/github.com/tinode/chat/server/tinode.conf -static_data=$HOME/tinode/webapp/
+	$GOPATH/bin/tinode -config=$GOPATH/src/github.com/tairov/chat/server/tinode.conf -static_data=$HOME/tinode/webapp/
 	```
 
 5. Test your installation by pointing your browser to [http://localhost:6060/](http://localhost:6060/). The static files from the `-static_data` path are served at web root `/`. You can change this by editing the line `static_mount` in the config file.
@@ -174,7 +174,7 @@ There is [no clean way](https://github.com/golang/go/issues/227) to daemonize a 
 Specific note for [nohup](https://en.wikipedia.org/wiki/Nohup) users: an `exit` must be issued immediately after `nohup` call to close the foreground session cleanly:
 
 ```
-nohup $GOPATH/bin/server -config=$GOPATH/src/github.com/tinode/chat/server/tinode.conf -static_data=$HOME/tinode/webapp/ &
+nohup $GOPATH/bin/server -config=$GOPATH/src/github.com/tairov/chat/server/tinode.conf -static_data=$HOME/tinode/webapp/ &
 exit
 ```
 
