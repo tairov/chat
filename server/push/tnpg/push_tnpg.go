@@ -11,9 +11,9 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/tinode/chat/server/push"
-	"github.com/tinode/chat/server/push/fcm"
-	"github.com/tinode/chat/server/store"
+	"github.com/tairov/chat/server/push"
+	"github.com/tairov/chat/server/push/fcm"
+	"github.com/tairov/chat/server/store"
 )
 
 const (

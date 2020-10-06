@@ -14,9 +14,9 @@ import (
 
 	ms "github.com/go-sql-driver/mysql"
 	"github.com/jmoiron/sqlx"
-	"github.com/tinode/chat/server/auth"
-	"github.com/tinode/chat/server/store"
-	t "github.com/tinode/chat/server/store/types"
+	"github.com/tairov/chat/server/auth"
+	"github.com/tairov/chat/server/store"
+	t "github.com/tairov/chat/server/store/types"
 )
 
 // adapter holds MySQL connection data.

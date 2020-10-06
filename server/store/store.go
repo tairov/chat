@@ -8,11 +8,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tinode/chat/server/auth"
-	"github.com/tinode/chat/server/db"
-	"github.com/tinode/chat/server/media"
-	"github.com/tinode/chat/server/store/types"
-	"github.com/tinode/chat/server/validate"
+	"github.com/tairov/chat/server/auth"
+	"github.com/tairov/chat/server/db"
+	"github.com/tairov/chat/server/media"
+	"github.com/tairov/chat/server/store/types"
+	"github.com/tairov/chat/server/validate"
 )
 
 var adp adapter.Adapter

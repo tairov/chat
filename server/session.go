@@ -20,9 +20,9 @@ import (
 
 	"github.com/gorilla/websocket"
 	"github.com/tinode/chat/pbx"
-	"github.com/tinode/chat/server/auth"
-	"github.com/tinode/chat/server/store"
-	"github.com/tinode/chat/server/store/types"
+	"github.com/tairov/chat/server/auth"
+	"github.com/tairov/chat/server/store"
+	"github.com/tairov/chat/server/store/types"
 
 	"golang.org/x/text/language"
 )

@@ -11,10 +11,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/tinode/chat/server/auth"
-	"github.com/tinode/chat/server/push"
-	rh "github.com/tinode/chat/server/ringhash"
-	"github.com/tinode/chat/server/store/types"
+	"github.com/tairov/chat/server/auth"
+	"github.com/tairov/chat/server/push"
+	rh "github.com/tairov/chat/server/ringhash"
+	"github.com/tairov/chat/server/store/types"
 )
 
 const (
