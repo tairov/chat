@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/tinode/chat/pbx"
+	github.com/tairov/chat/pbx"
 	"github.com/tairov/chat/server/store/types"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"

@@ -19,7 +19,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/tinode/chat/pbx"
+	github.com/tairov/chat/pbx"
 	"github.com/tairov/chat/server/auth"
 	"github.com/tairov/chat/server/store"
 	"github.com/tairov/chat/server/store/types"
