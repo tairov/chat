@@ -5,8 +5,6 @@ import (
 	"log"
 	"strconv"
 	"time"
-	"fmt"
-	"os"
 	"encoding/json"
 
 	fcm "firebase.google.com/go/messaging"
