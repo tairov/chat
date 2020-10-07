@@ -296,10 +296,8 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 				res2B, _ := json.Marshal(msg)
 				resD, _ := json.Marshal(d)
 				resNS, _ := json.Marshal(msg.APNS)
-                fmt.Fprintln(os.Stdout, string(res2B))
                 log.Println("fcm push debug (device): ", string(resD))
                 log.Println("fcm push debug (msg.apns): ", string(resNS))
-                log.Println("fcm push debug: ", msg)
                 log.Println("fcm push debug: ", string(res2B))
 			}
 		}
