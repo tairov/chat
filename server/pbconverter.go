@@ -7,7 +7,7 @@ import (
 	"log"
 	"time"
 
-	github.com/tairov/chat/pbx"
+	"github.com/tairov/chat/pbx"
 	"github.com/tairov/chat/server/store/types"
 )
 
