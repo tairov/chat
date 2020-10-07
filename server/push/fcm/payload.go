@@ -7,6 +7,7 @@ import (
 	"time"
 	"fmt"
 	"os"
+	"json"
 
 	fcm "firebase.google.com/go/messaging"
 
@@ -294,7 +295,7 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 				}
 				messages = append(messages, MessageData{Uid: uid, DeviceId: d.DeviceId, Message: &msg})
 				res2B, _ := json.Marshal(msg)
-                fmt.Println(string(res2B))
+                fmt.Fprintln(os.Stdout, string(res2B))
                 log.Println("fcm push debug: ", msg)
                 log.Println("fcm push debug: ", string(res2B))
 			}
