@@ -7,7 +7,7 @@ import (
 	"time"
 	"fmt"
 	"os"
-	"json"
+	"encoding/json"
 
 	fcm "firebase.google.com/go/messaging"
 
