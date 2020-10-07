@@ -149,8 +149,7 @@ func payloadToData(pl *push.Payload) (map[string]string, error) {
 	data["topic"] = pl.Topic
 	data["ts"] = pl.Timestamp.Format(time.RFC3339Nano)
 	// Must use "xfrom" because "from" is a reserved word. Google did not bother to document it anywhere.
-// 	data["xfrom"] = pl.From
-	data["xfrom"] = "my-test-id"
+	data["xfrom"] = pl.From
 	if pl.What == push.ActMsg {
 		data["seq"] = strconv.Itoa(pl.SeqId)
 		data["mime"] = pl.ContentType
@@ -273,7 +272,7 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 					badge := rcpt.To[uid].Unread
 					// Need to duplicate these in APNS.Payload.Aps.Alert so
 					// iOS may call NotificationServiceExtension (if present).
-					title := "New message (TEST)"
+					title := "New message"
 					body := userData["content"]
 					msg.APNS = &fcm.APNSConfig{
 						Payload: &fcm.APNSPayload{
