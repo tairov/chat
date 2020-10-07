@@ -275,7 +275,6 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 						Payload: &fcm.APNSPayload{
 							Aps: &fcm.Aps{
 								Badge:            &badge,
-								ContentAvailable: false,
 								MutableContent:   true,
 								Sound:            "default",
 								Alert: &fcm.ApsAlert{
