@@ -166,7 +166,7 @@ func payloadToData(pl *push.Payload) (map[string]string, error) {
 		}
 	} else if pl.What == push.ActSub {
 	    // don't send chat created push notification
-	    return nil
+	    return nil, nil
 	} else {
 		return nil, errors.New("unknown push type")
 	}
