@@ -291,9 +291,6 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 					}
 				}
 				messages = append(messages, MessageData{Uid: uid, DeviceId: d.DeviceId, Message: &msg})
-				res2B, _ := json.Marshal(msg)
-				resD, _ := json.Marshal(d)
-				resNS, _ := json.Marshal(msg.APNS)
 			}
 		}
 	}
