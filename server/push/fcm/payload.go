@@ -165,8 +165,8 @@ func payloadToData(pl *push.Payload) (map[string]string, error) {
 			}
 		}
 	} else if pl.What == push.ActSub {
-		data["modeWant"] = pl.ModeWant.String()
-		data["modeGiven"] = pl.ModeGiven.String()
+	    // don't send chat created push notification
+	    return nil
 	} else {
 		return nil, errors.New("unknown push type")
 	}
@@ -294,9 +294,6 @@ func PrepareNotifications(rcpt *push.Receipt, config *AndroidConfig) []MessageDa
 				res2B, _ := json.Marshal(msg)
 				resD, _ := json.Marshal(d)
 				resNS, _ := json.Marshal(msg.APNS)
-                log.Println("fcm push debug (device): ", string(resD))
-                log.Println("fcm push debug (msg.apns): ", string(resNS))
-                log.Println("fcm push debug: ", string(res2B))
 			}
 		}
 	}
